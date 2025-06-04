@@ -1,6 +1,7 @@
 class Solution:
     def rob(self, nums: List[int]) -> int:
         n = len(nums)
+        # add memoization
         cache = {}
         # we need to keep track of the cash of each path that we explore
         def explore(i):
